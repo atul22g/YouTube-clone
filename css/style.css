@@ -109,6 +109,42 @@ nav .right_icon .icon img {
 nav .right_icon .icon:hover {
   background-color: rgb(223, 221, 221);
 }
+/* list */
+nav .right_icon .icon ul li ul,
+nav .right_icon .icon ul li{
+  list-style: none;
+}
+nav .right_icon .icon ul li ul{
+  display: none;
+  position: absolute;
+  margin-top: 10px;
+  border: 1px solid silver;
+}
+nav .right_icon .icon:hover ul li ul{
+  display: list-item;
+  border-radius: 5px;
+  background-color: rgb(255, 253, 253);
+  width: fit-content;
+  height: fit-content;
+}
+nav .right_icon .icon:hover ul li ul li{
+  display: block;
+  padding: 8px;
+}
+nav .right_icon .icon:hover ul li ul li a{
+  text-decoration: none;
+  color: black;
+}
+nav .right_icon .icon:hover ul li ul li:hover{
+  background-color: rgb(250, 245, 245);
+}
+nav .right_icon .icon:hover ul li ul li img{
+  margin-right: 10px;
+  margin-top: 6px;
+}
+nav .right_icon .icon:hover ul li ul li span{
+  font-weight: 300;
+}
 /* header */
 header {
   width: 100vw;
@@ -132,12 +168,6 @@ header .branches {
 header .branches:hover {
   background-color: silver;
 }
-/* main{
-  width: 100vw;
-  height: 100vw;
-  background-color: rgb(241, 238, 238);
-} */
-
 /* Media Queries */
 @media (max-width: 800px) {
   nav .search,
