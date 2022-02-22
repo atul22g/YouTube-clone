@@ -109,41 +109,123 @@ nav .right_icon .icon img {
 nav .right_icon .icon:hover {
   background-color: rgb(223, 221, 221);
 }
-/* list */
-nav .right_icon .icon ul li ul,
-nav .right_icon .icon ul li{
+/* Dashboard */
+nav .right_icon .dashboard ul li ul,
+nav .right_icon .dashboard ul li {
   list-style: none;
 }
-nav .right_icon .icon ul li ul{
+nav .right_icon .dashboard ul li ul {
   display: none;
   position: absolute;
-  margin-top: 10px;
+  right: 135px;
   border: 1px solid silver;
 }
-nav .right_icon .icon:hover ul li ul{
+nav .right_icon .dashboard:hover ul li ul {
   display: list-item;
   border-radius: 5px;
   background-color: rgb(255, 253, 253);
   width: fit-content;
   height: fit-content;
+  padding: 10px;
 }
-nav .right_icon .icon:hover ul li ul li{
+nav .right_icon .dashboard:hover ul li ul li {
   display: block;
   padding: 8px;
 }
-nav .right_icon .icon:hover ul li ul li a{
+nav .right_icon .dashboard:hover ul li ul li a {
   text-decoration: none;
   color: black;
 }
-nav .right_icon .icon:hover ul li ul li:hover{
+nav .right_icon .dashboard:hover ul li ul li:hover {
   background-color: rgb(250, 245, 245);
 }
-nav .right_icon .icon:hover ul li ul li img{
+nav .right_icon .dashboard:hover ul li ul li img {
   margin-right: 10px;
   margin-top: 6px;
 }
-nav .right_icon .icon:hover ul li ul li span{
+nav .right_icon .dashboard:hover ul li ul li span {
   font-weight: 300;
+}
+/* bell */
+nav .right_icon .bell ul li ul,
+nav .right_icon .bell ul li {
+  list-style: none;
+}
+nav .right_icon .bell ul li ul {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  border: 1px solid silver;
+}
+nav .right_icon .bell:hover ul li ul::-webkit-scrollbar{
+  display: none;
+}
+nav .right_icon .bell:hover ul li ul {
+  display: list-item;
+  border-radius: 5px;
+  background-color: rgb(255, 253, 253);
+  width: 300px;
+  height: 200px;
+  padding-bottom: 10px;
+  overflow-y: scroll;
+}
+nav .right_icon .bell:hover ul li ul li {
+  display: block;
+}
+nav .right_icon .bell:hover ul li ul .padding{
+  padding: 15px 6px;
+}
+nav .right_icon .bell:hover ul li ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav .right_icon .bell:hover ul li ul li:hover {
+  background-color: rgb(250, 245, 245);
+}
+/* 1 */
+nav .right_icon .bell:hover ul li ul li span{
+  float: left;
+}
+nav .right_icon .bell:hover ul li ul li img{
+ float: right;
+}
+/* 2 */
+nav .right_icon .bell:hover ul li ul .flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav .right_icon .bell:hover ul li ul li .dot{
+  padding-bottom: 20px;
+  font-size: xx-large ;
+  color: blue;
+}
+nav .right_icon .bell:hover ul li ul li .bell_user_con{
+  border: 1px solid silver;
+  border-radius: 50%;
+}
+nav .right_icon .bell:hover ul li ul li .bell_user{
+  margin: 5px;
+}
+
+nav .right_icon .bell:hover ul li ul li p{
+  width: fit-content;
+  height: fit-content;
+  text-align: left;
+  font-size: small;
+}
+nav .right_icon .bell:hover ul li ul li p p{
+  margin: 5px 0;
+}
+nav .right_icon .bell:hover ul li ul li .banner{
+  width: 50px;
+  height: max-content;
+}
+nav .right_icon .bell:hover ul li ul li .dots{
+  width: fit-content;
+  height: 15px;
+  margin: 0 10px;
 }
 /* header */
 header {
