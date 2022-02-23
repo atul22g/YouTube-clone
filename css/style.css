@@ -109,32 +109,45 @@ nav .right_icon .icon img {
 nav .right_icon .icon:hover {
   background-color: rgb(223, 221, 221);
 }
-/* Dashboard */
-nav .right_icon .dashboard ul li ul,
-nav .right_icon .dashboard ul li {
+/* comman right_icon in css */
+/* remove list icon */
+nav .right_icon figure ul li ul,
+nav .right_icon figure ul li {
   list-style: none;
 }
+/* remove scrollbar */
+nav .right_icon figure:hover ul li ul::-webkit-scrollbar{
+  display: none;
+}
+/* hover */
+nav .right_icon figure:hover ul li ul .hover:hover{
+  background-color: rgb(238, 235, 235);
+}
 /* box */
-nav .right_icon .dashboard ul li ul {
+nav .right_icon figure ul li ul {
   display: none;
   position: absolute;
-  right: 135px;
   border: 1px solid silver;
 }
-nav .right_icon .dashboard:hover ul li ul {
+nav .right_icon figure:hover ul li ul {
   display: list-item;
   border-radius: 5px;
   background-color: rgb(255, 253, 253);
   width: fit-content;
   height: fit-content;
+  overflow: scroll;
 }
-nav .right_icon .dashboard:hover ul li ul .hover {
-  display: block;
-  padding: 10px ;
-}
-nav .right_icon .dashboard:hover ul li ul li a {
+/* remove link */
+nav .right_icon figure:hover ul li ul li a {
   text-decoration: none;
   color: black;
+}
+/* Dashboard */
+nav .right_icon .dashboard ul li ul {
+  right: 135px;
+}
+nav .right_icon .dashboard:hover ul li ul .hover {
+  padding: 10px ;
 }
 /* content */
 nav .right_icon .dashboard:hover ul li ul li img {
@@ -145,31 +158,11 @@ nav .right_icon .dashboard:hover ul li ul li span {
   font-weight: 300;
 }
 /* bell */
-nav .right_icon .bell ul li ul,
-nav .right_icon .bell ul li {
-  list-style: none;
-}
-/* box */
 nav .right_icon .bell ul li ul {
-  display: none;
-  position: absolute;
   right: 90px;
-  border: 1px solid silver;
-}
-nav .right_icon .bell:hover ul li ul::-webkit-scrollbar{
-  display: none;
 }
 nav .right_icon .bell:hover ul li ul {
-  display: list-item;
-  border-radius: 5px;
-  background-color: rgb(255, 253, 253);
-  width: 220px;
-  height: 300px;
-  padding-bottom: 10px;
-  overflow-y: scroll;
-}
-nav .right_icon .bell:hover ul li ul li {
-  display: block;
+  height: 400px;
 }
 nav .right_icon .bell:hover ul li ul .padding{
   padding: 15px 6px;
@@ -177,10 +170,7 @@ nav .right_icon .bell:hover ul li ul .padding{
 nav .right_icon .bell:hover ul li ul .hr{
   padding: 15px 0;
 }
-nav .right_icon .bell:hover ul li ul li a {
-  text-decoration: none;
-  color: black;
-}
+/* content */
 /* 1 */
 nav .right_icon .bell:hover ul li ul li span{
   float: left;
@@ -193,9 +183,7 @@ nav .right_icon .bell:hover ul li ul .flex{
   display: flex;
   align-items: center;
 }
-nav .right_icon .bell:hover ul li ul .hover:hover{
-  background-color: rgb(250, 245, 245);
-}
+
 nav .right_icon .bell:hover ul li ul li .dot{
   padding-bottom: 20px;
   font-size: xx-large ;
@@ -230,52 +218,18 @@ nav .right_icon .bell:hover ul li ul li .dots{
   margin: 0 10px;
 }
 /* user */
-nav .right_icon .user ul li ul,
-nav .right_icon .user ul li {
-  list-style: none;
-}
-/* box */
 nav .right_icon .user ul li ul {
-  display: none;
-  position: absolute;
   right: 50px;
-  border: 1px solid silver;
-}
-nav .right_icon .user:hover ul li ul::-webkit-scrollbar {
-  display: none;
 }
 nav .right_icon .user:hover ul li ul {
-  display: list-item;
-  border-radius: 5px;
-  background-color: rgb(255, 253, 253);
-  width: fit-content;
   height: 500px;
-  overflow: scroll;
-}
-nav .right_icon .dashboard:hover ul li ul li {
-  display: block;
-  padding: 8px 0;
-}
-nav .right_icon .dashboard:hover ul li ul li a {
-  text-decoration: none;
-  color: black;
-}
-nav .right_icon .dashboard:hover ul li ul .hover:hover {
-  background-color: rgb(236, 236, 236);
-}
-/* content */
-nav .right_icon .dashboard:hover ul li ul li img {
-  margin-right: 10px;
-  margin-top: 6px;
-}
-nav .right_icon .dashboard:hover ul li ul li span {
-  font-weight: 300;
 }
 /* flex */
 nav .right_icon .user:hover ul li ul .flex{
   display: flex;
   align-items: center;
 }
+/* content */
 /* user container */
 nav .right_icon .user:hover ul li ul li .user_con{
   border: 1px solid silver;
@@ -316,9 +270,6 @@ nav .right_icon .user:hover ul li ul li .first{
 /* hover */
 nav .right_icon .user:hover ul li ul .hover{
   padding: 5px;
-}
-nav .right_icon .user:hover ul li ul .hover:hover{
-  background-color: rgb(238, 235, 235);
 }
 nav .right_icon .user ul li ul li .restricted{
   margin: 10px;
