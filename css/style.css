@@ -165,8 +165,8 @@ nav .right_icon .bell:hover ul li ul {
   display: list-item;
   border-radius: 5px;
   background-color: rgb(255, 253, 253);
-  width: 300px;
-  height: 200px;
+  width: 220px;
+  height: 300px;
   padding-bottom: 10px;
   overflow-y: scroll;
 }
@@ -180,9 +180,6 @@ nav .right_icon .bell:hover ul li ul li a {
   text-decoration: none;
   color: black;
 }
-nav .right_icon .bell:hover ul li ul li:hover {
-  background-color: rgb(250, 245, 245);
-}
 /* 1 */
 nav .right_icon .bell:hover ul li ul li span{
   float: left;
@@ -194,16 +191,20 @@ nav .right_icon .bell:hover ul li ul li img{
 nav .right_icon .bell:hover ul li ul .flex{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+}
+nav .right_icon .bell:hover ul li ul .hover:hover{
+  background-color: rgb(250, 245, 245);
 }
 nav .right_icon .bell:hover ul li ul li .dot{
   padding-bottom: 20px;
   font-size: xx-large ;
   color: blue;
+  margin: 0 3px;
 }
 nav .right_icon .bell:hover ul li ul li .bell_user_con{
   border: 1px solid silver;
   border-radius: 50%;
+  margin: 0 3px;
 }
 nav .right_icon .bell:hover ul li ul li .bell_user{
   margin: 5px;
@@ -214,17 +215,17 @@ nav .right_icon .bell:hover ul li ul li p{
   height: fit-content;
   text-align: left;
   font-size: small;
-}
-nav .right_icon .bell:hover ul li ul li p p{
-  margin: 5px 0;
+  margin: 0 5px;
 }
 nav .right_icon .bell:hover ul li ul li .banner{
   width: 50px;
   height: max-content;
+  margin: 0 3px;
 }
 nav .right_icon .bell:hover ul li ul li .dots{
   width: fit-content;
   height: 15px;
+  margin: 0 3px;
   margin: 0 10px;
 }
 /* header */
@@ -260,6 +261,12 @@ header .branches:hover {
     display: flex;
   }
   nav .right_icon .icon:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width:350px) {
+  body{
     display: none;
   }
 }
