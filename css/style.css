@@ -93,8 +93,8 @@ nav .right_icon .icon:nth-child(1) {
   display: none;
 }
 nav .right_icon .icon {
-  width: 38px;
-  height: 38px;
+  width: 34px;
+  height: 34px;
   margin: 0 4px;
   display: flex;
   align-items: center;
@@ -114,6 +114,7 @@ nav .right_icon .dashboard ul li ul,
 nav .right_icon .dashboard ul li {
   list-style: none;
 }
+/* box */
 nav .right_icon .dashboard ul li ul {
   display: none;
   position: absolute;
@@ -126,19 +127,16 @@ nav .right_icon .dashboard:hover ul li ul {
   background-color: rgb(255, 253, 253);
   width: fit-content;
   height: fit-content;
-  padding: 10px;
 }
-nav .right_icon .dashboard:hover ul li ul li {
+nav .right_icon .dashboard:hover ul li ul .hover {
   display: block;
-  padding: 8px;
+  padding: 10px ;
 }
 nav .right_icon .dashboard:hover ul li ul li a {
   text-decoration: none;
   color: black;
 }
-nav .right_icon .dashboard:hover ul li ul li:hover {
-  background-color: rgb(250, 245, 245);
-}
+/* content */
 nav .right_icon .dashboard:hover ul li ul li img {
   margin-right: 10px;
   margin-top: 6px;
@@ -151,11 +149,11 @@ nav .right_icon .bell ul li ul,
 nav .right_icon .bell ul li {
   list-style: none;
 }
+/* box */
 nav .right_icon .bell ul li ul {
   display: none;
   position: absolute;
-  top: 30px;
-  right: 100px;
+  right: 90px;
   border: 1px solid silver;
 }
 nav .right_icon .bell:hover ul li ul::-webkit-scrollbar{
@@ -175,6 +173,9 @@ nav .right_icon .bell:hover ul li ul li {
 }
 nav .right_icon .bell:hover ul li ul .padding{
   padding: 15px 6px;
+}
+nav .right_icon .bell:hover ul li ul .hr{
+  padding: 15px 0;
 }
 nav .right_icon .bell:hover ul li ul li a {
   text-decoration: none;
@@ -228,6 +229,100 @@ nav .right_icon .bell:hover ul li ul li .dots{
   margin: 0 3px;
   margin: 0 10px;
 }
+/* user */
+nav .right_icon .user ul li ul,
+nav .right_icon .user ul li {
+  list-style: none;
+}
+/* box */
+nav .right_icon .user ul li ul {
+  display: none;
+  position: absolute;
+  right: 50px;
+  border: 1px solid silver;
+}
+nav .right_icon .user:hover ul li ul::-webkit-scrollbar {
+  display: none;
+}
+nav .right_icon .user:hover ul li ul {
+  display: list-item;
+  border-radius: 5px;
+  background-color: rgb(255, 253, 253);
+  width: fit-content;
+  height: 500px;
+  overflow: scroll;
+}
+nav .right_icon .dashboard:hover ul li ul li {
+  display: block;
+  padding: 8px 0;
+}
+nav .right_icon .dashboard:hover ul li ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav .right_icon .dashboard:hover ul li ul .hover:hover {
+  background-color: rgb(236, 236, 236);
+}
+/* content */
+nav .right_icon .dashboard:hover ul li ul li img {
+  margin-right: 10px;
+  margin-top: 6px;
+}
+nav .right_icon .dashboard:hover ul li ul li span {
+  font-weight: 300;
+}
+/* flex */
+nav .right_icon .user:hover ul li ul .flex{
+  display: flex;
+  align-items: center;
+}
+/* user container */
+nav .right_icon .user:hover ul li ul li .user_con{
+  border: 1px solid silver;
+  width: max-content;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(250, 245, 245);
+  border-radius: 50%;
+  margin: 10px;
+  margin-right: 6px;
+}
+nav .right_icon .user:hover ul li ul .one{
+  margin: 10px 0;
+}
+nav .right_icon .user:hover ul li ul li .user{
+  margin: 6px;
+}
+/* account */
+nav .right_icon .user:hover ul li ul li .account{
+  font-size: small;  
+  margin: 0 10px;
+}
+nav .right_icon .user:hover ul li ul li .account p:nth-child(1){
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+nav .right_icon .user:hover ul li ul li .account p:nth-child(2){
+  color: blue;
+}
+/* 2 */
+nav .right_icon .user:hover ul li ul li .first{
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+/* hover */
+nav .right_icon .user:hover ul li ul .hover{
+  padding: 5px;
+}
+nav .right_icon .user:hover ul li ul .hover:hover{
+  background-color: rgb(238, 235, 235);
+}
+nav .right_icon .user ul li ul li .restricted{
+  margin: 10px;
+}
 /* header */
 header {
   width: 100vw;
@@ -251,6 +346,27 @@ header .branches {
 header .branches:hover {
   background-color: silver;
 }
+/* main */
+/* main{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(238, 235, 235);
+}
+main section{
+  display: flex;
+  align-items: center;
+}
+main section figure{
+border: 2px solid black;
+margin: 10px;
+}
+main section figure .video{
+  width: 400px;
+}
+main section figure figcaption p{
+width: 300px;
+margin: 10px;
+} */
 /* Media Queries */
 @media (max-width: 800px) {
   nav .search,
@@ -260,12 +376,8 @@ header .branches:hover {
   nav .right_icon .icon:nth-child(1) {
     display: flex;
   }
-  nav .right_icon .icon:nth-child(2) {
-    display: none;
-  }
 }
-
-@media (max-width:350px) {
+@media (max-width:319px) {
   body{
     display: none;
   }
