@@ -4,6 +4,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* remove scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
+nav .right_icon figure:hover ul li ul::-webkit-scrollbar {
+  display: none;
+}
 /* nav bar */
 nav {
   width: 100vw;
@@ -114,10 +121,6 @@ nav .right_icon .icon:hover {
 nav .right_icon figure ul li ul,
 nav .right_icon figure ul li {
   list-style: none;
-}
-/* remove scrollbar */
-nav .right_icon figure:hover ul li ul::-webkit-scrollbar {
-  display: none;
 }
 /* hover */
 nav .right_icon figure:hover ul li ul .hover:hover {
@@ -298,7 +301,81 @@ header .branches:hover {
   background-color: silver;
 }
 /* main */
-/* Media Queries */
+main {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.76);
+}
+main .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+main .container .box {
+  margin: 5px;
+  width: calc(100vw / 4.2);
+  height: 100%;
+}
+main .container .box img {
+  width: calc(100vw / 4.2);
+  height: fit-content;
+}
+main .container .box figcaption {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+/* first */
+main .container .box figcaption .first {
+  width: fit-content;
+  height: fit-content;
+  padding: 2px;
+  margin: 0 2.5px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+main .container .box figcaption .first .first_img{
+  width: 20px;
+  height: 20px;
+}
+/* center */
+main .container .box figcaption .center {
+  width: 100%;
+  height: 100%;
+  font-size: smaller;
+  margin: 0 2.5px;
+}
+main .container .box figcaption .center .tittle {
+  width: 100%;
+  font-weight: 500;
+}
+main .container .box figcaption .center .tittle2 {
+  color: rgb(170, 169, 169);
+}
+/* third */
+main .container .box figcaption .third {
+  height: 25%;
+  width: 15%;
+  margin: 2px;
+  margin: 0 2.5px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+main .container .box figcaption .third .third_img{
+  width: fit-content;
+  height: 15px;
+}
+/* Media Queries width: 586px */
+
+/* Media Queries width: 800px */
 @media (max-width: 800px) {
   nav .search,
   nav .search .search_con {
@@ -307,7 +384,11 @@ header .branches:hover {
   nav .right_icon .icon:nth-child(1) {
     display: flex;
   }
+  nav .right_icon .icon:nth-child(2) {
+    display: none;
+  }
 }
+/* Media Queries width: 319px */
 @media (max-width: 319px) {
   body {
     display: none;
