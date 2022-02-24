@@ -116,11 +116,11 @@ nav .right_icon figure ul li {
   list-style: none;
 }
 /* remove scrollbar */
-nav .right_icon figure:hover ul li ul::-webkit-scrollbar{
+nav .right_icon figure:hover ul li ul::-webkit-scrollbar {
   display: none;
 }
 /* hover */
-nav .right_icon figure:hover ul li ul .hover:hover{
+nav .right_icon figure:hover ul li ul .hover:hover {
   background-color: rgb(238, 235, 235);
 }
 /* box */
@@ -147,7 +147,7 @@ nav .right_icon .dashboard ul li ul {
   right: 135px;
 }
 nav .right_icon .dashboard:hover ul li ul .hover {
-  padding: 10px ;
+  padding: 10px;
 }
 /* content */
 nav .right_icon .dashboard:hover ul li ul li img {
@@ -164,54 +164,54 @@ nav .right_icon .bell ul li ul {
 nav .right_icon .bell:hover ul li ul {
   height: 400px;
 }
-nav .right_icon .bell:hover ul li ul .padding{
+nav .right_icon .bell:hover ul li ul .padding {
   padding: 15px 6px;
 }
-nav .right_icon .bell:hover ul li ul .hr{
+nav .right_icon .bell:hover ul li ul .hr {
   padding: 15px 0;
 }
 /* content */
 /* 1 */
-nav .right_icon .bell:hover ul li ul li span{
+nav .right_icon .bell:hover ul li ul li span {
   float: left;
 }
-nav .right_icon .bell:hover ul li ul li img{
- float: right;
+nav .right_icon .bell:hover ul li ul li img {
+  float: right;
 }
 /* 2 */
-nav .right_icon .bell:hover ul li ul .flex{
+nav .right_icon .bell:hover ul li ul .flex {
   display: flex;
   align-items: center;
 }
 
-nav .right_icon .bell:hover ul li ul li .dot{
+nav .right_icon .bell:hover ul li ul li .dot {
   padding-bottom: 20px;
-  font-size: xx-large ;
+  font-size: xx-large;
   color: blue;
   margin: 0 3px;
 }
-nav .right_icon .bell:hover ul li ul li .bell_user_con{
+nav .right_icon .bell:hover ul li ul li .bell_user_con {
   border: 1px solid silver;
   border-radius: 50%;
   margin: 0 3px;
 }
-nav .right_icon .bell:hover ul li ul li .bell_user{
+nav .right_icon .bell:hover ul li ul li .bell_user {
   margin: 5px;
 }
 
-nav .right_icon .bell:hover ul li ul li p{
+nav .right_icon .bell:hover ul li ul li p {
   width: fit-content;
   height: fit-content;
   text-align: left;
   font-size: small;
   margin: 0 5px;
 }
-nav .right_icon .bell:hover ul li ul li .banner{
+nav .right_icon .bell:hover ul li ul li .banner {
   width: 50px;
   height: max-content;
   margin: 0 3px;
 }
-nav .right_icon .bell:hover ul li ul li .dots{
+nav .right_icon .bell:hover ul li ul li .dots {
   width: fit-content;
   height: 15px;
   margin: 0 3px;
@@ -225,13 +225,13 @@ nav .right_icon .user:hover ul li ul {
   height: 500px;
 }
 /* flex */
-nav .right_icon .user:hover ul li ul .flex{
+nav .right_icon .user:hover ul li ul .flex {
   display: flex;
   align-items: center;
 }
 /* content */
 /* user container */
-nav .right_icon .user:hover ul li ul li .user_con{
+nav .right_icon .user:hover ul li ul li .user_con {
   border: 1px solid silver;
   width: max-content;
   height: max-content;
@@ -243,35 +243,35 @@ nav .right_icon .user:hover ul li ul li .user_con{
   margin: 10px;
   margin-right: 6px;
 }
-nav .right_icon .user:hover ul li ul .one{
+nav .right_icon .user:hover ul li ul .one {
   margin: 10px 0;
 }
-nav .right_icon .user:hover ul li ul li .user{
+nav .right_icon .user:hover ul li ul li .user {
   margin: 6px;
 }
 /* account */
-nav .right_icon .user:hover ul li ul li .account{
-  font-size: small;  
+nav .right_icon .user:hover ul li ul li .account {
+  font-size: small;
   margin: 0 10px;
 }
-nav .right_icon .user:hover ul li ul li .account p:nth-child(1){
+nav .right_icon .user:hover ul li ul li .account p:nth-child(1) {
   margin-bottom: 10px;
   font-weight: 400;
 }
-nav .right_icon .user:hover ul li ul li .account p:nth-child(2){
+nav .right_icon .user:hover ul li ul li .account p:nth-child(2) {
   color: blue;
 }
 /* 2 */
-nav .right_icon .user:hover ul li ul li .first{
+nav .right_icon .user:hover ul li ul li .first {
   width: 25px;
   height: 25px;
   margin: 10px;
 }
 /* hover */
-nav .right_icon .user:hover ul li ul .hover{
+nav .right_icon .user:hover ul li ul .hover {
   padding: 5px;
 }
-nav .right_icon .user ul li ul li .restricted{
+nav .right_icon .user ul li ul li .restricted {
   margin: 10px;
 }
 /* header */
@@ -298,26 +298,6 @@ header .branches:hover {
   background-color: silver;
 }
 /* main */
-/* main{
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(238, 235, 235);
-}
-main section{
-  display: flex;
-  align-items: center;
-}
-main section figure{
-border: 2px solid black;
-margin: 10px;
-}
-main section figure .video{
-  width: 400px;
-}
-main section figure figcaption p{
-width: 300px;
-margin: 10px;
-} */
 /* Media Queries */
 @media (max-width: 800px) {
   nav .search,
@@ -328,8 +308,8 @@ margin: 10px;
     display: flex;
   }
 }
-@media (max-width:319px) {
-  body{
+@media (max-width: 319px) {
+  body {
     display: none;
   }
 }
