@@ -193,13 +193,10 @@ nav .right_icon .bell:hover ul li ul li .dot {
   color: blue;
   margin: 0 3px;
 }
-nav .right_icon .bell:hover ul li ul li .bell_user_con {
-  border: 1px solid silver;
-  border-radius: 50%;
-  margin: 0 3px;
-}
 nav .right_icon .bell:hover ul li ul li .bell_user {
-  margin: 5px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
 }
 
 nav .right_icon .bell:hover ul li ul li p {
@@ -346,7 +343,7 @@ main .container .box {
   height: 100%;
   margin: 5px 0;
 }
-main .container .box a{
+main .container .box a {
   text-decoration: none;
 }
 main .container .box .img {
@@ -386,8 +383,9 @@ main .container .box figcaption .first {
   cursor: pointer;
 }
 main .container .box figcaption .first .first_img {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 /* center */
 main .container .box figcaption .center {
@@ -444,4 +442,3 @@ main .container .box figcaption .third .third_img {
     display: flex;
   }
 }
-
