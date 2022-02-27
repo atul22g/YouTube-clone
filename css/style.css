@@ -288,10 +288,11 @@ header {
 header::-webkit-scrollbar {
   display: none;
 }
+/* explore */
 header .explore {
   border: 1px solid silver;
   padding: 3px;
-  margin-left: 8px;
+  margin: 0 4px;
   background-color: rgb(241, 234, 234);
   text-transform: capitalize;
   display: flex;
@@ -303,17 +304,18 @@ header .explore img {
   height: 22px;
   margin-right: 3px;
 }
+/* line */
 header .line {
   width: 10px;
   font-size: 2.6em;
-  margin-left: 8px;
+  margin: 0 4px;
   padding-bottom: 8px;
 }
 /* branches */
 header .branches {
   border: 1px solid silver;
   padding: 5px 10px;
-  margin: 0 5px;
+  margin: 0 4px;
   background-color: rgb(241, 234, 234);
   border-radius: 20px;
   cursor: pointer;
@@ -413,9 +415,6 @@ main .container .box figcaption .third .third_img {
   }
   nav .right_icon .icon:nth-child(1) {
     display: flex;
-  }
-  nav .right_icon .icon:nth-child(2) {
-    display: none;
   }
 }
 /* Media Queries width: 319px */
