@@ -450,4 +450,8 @@ main .container .box figcaption .third .third_img {
     margin: 0;
     margin-bottom: 5px;
   }
+  main .container .box figcaption {
+    width: 98%;
+    margin: auto;
+  }
 }
