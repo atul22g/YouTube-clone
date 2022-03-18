@@ -11,7 +11,14 @@
   </head>
   <body onload="loading()">
     <!-- loading -->
-    <div id="loading"></div>
+    <div id="loading">
+      <div class="center-div">
+        <div class="outer-ring"></div>
+        <div class="middle-ring"></div>
+        <div class="inner-ring"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
     <!-- website -->
     <nav>
       <!-- logo -->
@@ -1300,9 +1307,9 @@
     </main>
     <script>
       var preloader = document.getElementById("loading");
-      function loading(){
-        preloader.style.display = 'none';
-      };
+      function loading() {
+        preloader.style.display = "none";
+      }
     </script>
   </body>
 </html>
